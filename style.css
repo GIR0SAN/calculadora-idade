@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --grey: #f0f0f0;
+    --grey-dark: #7e7d7d;
+    --white: #ffffff;
+    --black: #000000;
+    --purple:#864cff;
+    --red: #e66664;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.l-header{
+    background-color: var(--grey);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.l-card__wrapper{
+    background: var(--white);
+    width: 800px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 1rem 1rem 10rem 1rem;
+}
+
+.l-datas__block{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.l-data__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label{
+    color: var(--grey-dark);
+    text-transform: uppercase;
+}
+
+input{
+    width: 100px;
+    padding: .5rem 1rem;
+    border-radius: .5rem ;
+    border: 4px solid var(--grey);
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    -moz-appearance: textfield;
+}
+
+input::placeholder{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.l-submit{
+   display: flex;
+   align-items:center ;
+}
+
+.l-submit hr{
+    width: 100%; 
+    color: var(--grey);
+}
+
+.l-button{
+    background-color: var(--purple);
+    border-radius: 50%;
+    padding: 1.5rem;
+    cursor: pointer;
+    border: none;
+    display: flex;  
+}
+
+.l-list{
+    list-style-type: none;
+}
+
+.c-trace{
+    color: var(--purple);
+    font-size: 7rem;
+    font-weight: 700;
+    margin-right: 30px;
+
+}
+
+.c-h1{
+    font-size: 7rem;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 110%;
+}
+
+@media screen and (max-width:498px) {
+    .l-header{
+        width: auto;
+        height: 100vh;
+    }
+    .l-card__wrapper{
+        width: auto;
+        padding: 12px;
+        border-radius: 1rem 1rem 5rem 1rem;
+        margin: auto  0;
+    }
+
+    .l-submit{
+        position: relative;
+        margin: 4em 0;
+    }
+    .l-button{
+        padding: 1rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .c-trace{
+        color: var(--purple);
+        font-size: 2rem;
+        font-weight: 700;
+        margin-right: 30px;
+    }
+    
+    .c-h1{
+        font-size: 2rem;
+        font-weight: 700;
+        font-style: italic;
+        line-height: 110%;
+    }
+    
+    form{
+        width: 340px;
+    }
+    .l-form__container{
+        width: 300px;
+    }
+    .l-datas__block{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        gap: .5rem;
+        width: auto;
+    }
+
+    label{
+        width: 50px;
+    }
+
+    .l-data__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+
+    }
+    input{
+        width: 50px;
+    }
+    
+    input::placeholder{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+    
+    .l-card__wrapper{
+       width: 400px;
+    }
+ 
+    .c-trace{
+        font-size: 3rem;
+    }
+    
+    .c-h1{
+        font-size: 3rem;
+    }
+    
+    .l-form__container{
+        width: 300px;
+    }
+
+    input{
+        width: 60px;
+    }
+    
+    input::placeholder{
+        font-size: 1rem;
+    }
+
+    .l-button{
+        padding: 1.2rem;
+    }
+    
+}

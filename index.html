@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator</title>
+</head>
+
+<body>
+  <header class="l-header">
+    <div class="l-card__wrapper">
+      <form>
+        <div class="l-datas__block">
+          <div class="l-form__container">
+            <div class="l-data__wrapper">
+              <label for="day">
+                Day
+              </label>
+              <input type="number" placeholder="DD" id="day">
+              <small></small>
+            </div>
+          </div>
+          <div class="l-form__container">
+            <div class="l-data__wrapper">
+              <label for="month">
+                Month
+              </label>
+              <input type="number" id="month" placeholder="MM">
+              <small></small>
+            </div>
+          </div>
+          <div class="l-form__container">
+            <div class="l-data__wrapper">
+              <label for="year">
+                Year
+              </label>
+              <input type="number" id="year" placeholder="YYYY">
+              <small></small>
+            </div>
+          </div>
+        </div>
+
+        <div class="l-submit">
+          <hr>
+          <button type="submit" class="l-button"><img src="assets/images/icon-arrow.svg" alt="Icon Decortive"></button>
+        </div>
+
+      </form>
+
+      <div class="l-output">
+        <ul class="l-list">
+          <li class="c-list"> <h1 class="c-h1"> <span class="c-trace" id="YYYY">--</span>years</h1></li>
+          <li class="c-list"> <h1 class="c-h1"> <span class="c-trace" id="MM">--</span>months</h1></li>
+          <li class="c-list"> <h1 class="c-h1"> <span class="c-trace" id="DD">--</span>days</h1></li>
+        </ul>
+      </div>
+    </div>
+
+    
+  </header>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
